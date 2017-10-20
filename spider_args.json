@@ -1,0 +1,14 @@
+{
+  "0001":{
+    "_comment":"安徽大学_数学科学学院",
+    "url":"http://math.ahu.edu.cn/class_type.asp?id=19",
+    "url_args":[
+      ["method1", "args1"],
+      ["method2", "args2"]
+    ],
+    "detail_args":[
+      ["method1", "args1"],
+      ["method2", "args2"]
+    ]
+  }
+}

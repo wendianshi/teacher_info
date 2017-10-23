@@ -4,16 +4,74 @@
     "url":"http://math.ahu.edu.cn/class_type.asp?id=19",
     "url_args":{
       "method_file1":"requests_method",
-      "method1":"catalog_requests_1",
+      "method1":"catalog_requests_2",
       "args1": {
         "e_table": {
           "tag": "div",
           "attrs": {
             "class": "Section1"
           }
+        },
+        "catalog_mehod":{
+          "tag":"a",
+          "data":{
+            "职称":{
+              "func":"find_previous.get_text",
+              "args":{
+                "find_previous":{
+                  "l":["p"],
+                  "d":{
+                    "attrs":{"align":""}
+                  }
+                },
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            },
+            "detail_url":{
+              "func":"get",
+              "args":{
+                "get":{
+                  "l":["href"]
+                }
+              },
+              "more_func":{
+                "func":["url_func"],
+                "args":{
+                  "url_func":["http://math.ahu.edu.cn/", "http:"]
+                }
+              }
+            },
+            "教师姓名":{
+              "func":"get_text",
+              "args":{
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            },
+            "课程":{
+              "func":"find_next.get_text",
+              "args":{
+                "find_next":{
+                  "l":["td"]
+                },
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            }
+          }
+          }
         }
-      }
-    },
+      },
     "detail_args":{
       "method_file1":"requests_method",
       "method1":"detail_requests_1",
@@ -31,53 +89,83 @@
     "_comment":"安徽大学_物理与材料科学学院",
     "url":"http://wlxy.ahu.edu.cn/channel.asp?id=17",
     "url_args":{
-      "method_file1":"",
-      "method1":"",
+      "method_file1":"requests_method",
+      "method1":"catalog_requests_2",
       "args1": {
-        "": {
-          "1": "div",
-          "2": {
-            "3": "Section1"
+        "e_table": {
+          "tag": "div",
+          "attrs": {
+            "class": "Section1"
+          }
+        },
+        "catalog_mehod":{
+          "tag":"a",
+          "data":{
+            "职称":{
+              "func":"find_previous.get_text",
+              "args":{
+                "find_previous":{
+                  "l":["p"],
+                  "d":{
+                    "attrs":{"align":""}
+                  }
+                },
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            },
+            "detail_url":{
+              "func":"get",
+              "args":{
+                "get":{
+                  "l":["href"]
+                }
+              },
+              "more_func":{
+                "func":["url_func"],
+                "args":{
+                  "url_func":["http://math.ahu.edu.cn/", "http:"]
+                }
+              }
+            },
+            "教师姓名":{
+              "func":"get_text",
+              "args":{
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            },
+            "课程":{
+              "func":"find_next.get_text",
+              "args":{
+                "find_next":{
+                  "l":["td"]
+                },
+                "get_text":{
+                  "d":{
+                    "strip":"True"
+                  }
+                }
+              }
+            }
+          }
           }
         }
-      }
-    },
+      },
     "detail_args":{
-      "method_file1":"",
-      "method1":"",
+      "method_file1":"requests_method",
+      "method1":"detail_requests_1",
       "args1":{
         "e_table": {
-          "1": "",
-          "2": {
-            "3": ""
-          }
-        }
-      }
-    }
-  },
-  "0000":{
-    "_comment":"",
-    "url":"",
-    "url_args":{
-      "method_file1":"",
-      "method1":"",
-      "args1": {
-        "": {
-          "1": "div",
-          "2": {
-            "3": "Section1"
-          }
-        }
-      }
-    },
-    "detail_args":{
-      "method_file1":"",
-      "method1":"",
-      "args1":{
-        "e_table": {
-          "1": "",
-          "2": {
-            "3": ""
+          "tag": "div",
+          "attrs": {
+            "id": "news"
           }
         }
       }
